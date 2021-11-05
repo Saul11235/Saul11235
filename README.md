@@ -1,3 +1,5 @@
-### Hola, Soy Edwin Saul/Saul11235
-Soy un programador aficionado, bienvenido a mi perfil de github, puedes ver algunos de mis repos aquí
+### Hi I'm Edwin Saul/Saul11235
 
+I'm a hobbyist developer, i like programmable calculators, games, and software development in general, see my's repos.
+
+[My Blog on spanish illarisoft.com](https:www.illarisoft.com)
