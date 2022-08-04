@@ -2,5 +2,5 @@
 
 I'm a hobbyist developer, i like programmable calculators, games, and software development in general, see my repos.
 
-[Portfolio](https://saul11235.github.io/portfolio/)
-[My Blog on spanish illarisoft.com](https://www.illarisoft.com/)
+- [Portfolio](https://saul11235.github.io/portfolio/)
+- [illarisoft.com](https://www.illarisoft.com/)  my blog
