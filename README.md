@@ -9,4 +9,4 @@ and software development in general.
 [![personal page](https://img.shields.io/badge/-personal_page-red)](https://saul11235.github.io/portfolio/)
 [![python packages](https://img.shields.io/badge/-python_packages-green)](https://pypi.org/user/EdwinSaul/)
 [![my blog](https://img.shields.io/badge/-illarisoft-blue)](https://www.illarisoft.com/)
-[![linktree](https://img.shields.io/badge/-linktree-purple))](https://linktr.ee/edwinsaul)
+[![linktree](https://img.shields.io/badge/-linktree-purple)](https://linktr.ee/edwinsaul)
