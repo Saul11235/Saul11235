@@ -1,0 +1,167 @@
+
+/* general  styles----------------*/
+body {
+  margin:0px;
+  padding:0px;
+  background-color:darkblue;
+  font-family:     "Quicksand";
+  font-size: 2.75ex;
+  background-attachment:fixed;
+  background-image: linear-gradient(-45deg,
+ 	 rgb(20, 10, 230 ) 0%,
+	 rgb(20, 50, 150 ) 25%,
+	 rgb(10, 30, 110 ) 40%,
+	 rgb( 0, 10, 30   ) 100%
+	 );
+}
+
+img {
+  max-width:80%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#prolife {
+  min-width:30%;
+  max-width:60%;
+  border-radius:50%;
+  padding:30px;
+}
+
+/* body and  container -------------- */
+body h1 {
+  padding:20px;
+  padding-top:25px;
+  color: white;
+}
+
+/*container */
+.container  {
+  background-color:white;
+  color:black;
+  margin:20px;
+  padding:20px 20px 30px 20px;
+  border-radius:30px;
+  display: flex;
+  flex-direction: column;
+}
+/*delete space container*/
+
+.container h2 {
+  margin-top:15px;
+  margin-bottom:25px;
+}
+
+.container h1 {
+  margin-top:15px;
+  margin-bottom:25px;
+}
+
+.container p {
+  text-align:justify;
+}
+
+/*presentation*/
+#presentation {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+#presentation :first-child {
+  min-width:300px;
+  align-self:stretch;
+  max-width: 40%;
+}
+
+#presentation_rigth {
+  min-width:200px;
+  max-width: 100%;
+  padding:30px;
+  display: flex;
+  flex-direction:column;
+  align-self:stretch;
+}
+
+#presentation_rigth p {
+  max-width: 100%;
+}
+
+/*hyperlinks---------------*/
+
+a {
+  margin:10px;
+  padding:5px 20px  5px 20px;
+  border-radius:5px;
+  background-color:black;
+  color:white;
+  text-decoration:none;
+  transition: background-color 0.5s;
+  text-align:center;
+  font-size:2.5ex;
+}
+
+a:hover  {
+  background-color: red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+a:active {
+  background-color:purple;
+}
+
+
+
+.special_link {
+  background-color: green;
+}
+
+/* ul ------------------------ */
+ul  {
+  margin:20px;
+  padding-left:0px;
+  list-style-type:none;
+}
+ul  li  {
+  margin-top:18px;
+  margin-bottom:18px;
+}
+
+/*footer --------------------*/
+
+footer {
+  background-color:black;
+  margin:0px;
+  margin-top:30px;
+  height:100px;
+  width:100%;
+  display:flex;
+ box-shadow: 0 50vh 0 50vh #000;
+
+}
+footer a {
+  flex:1;
+  height:100%;
+  text-align:center;
+  background-color:black;
+  border-radius:0px;
+  margin:0px;
+  padding:0px;
+  padding-top:40px;
+  transition: background-color 0.5s;
+  transition: padding 0.5s;
+  transition: padding-top 0.5px;
+}
+
+footer a:hover {
+  background-color: darkred;
+  padding:0px;
+  padding-top:40px;
+}
+footer a:active {
+  background-color:purple;
+}
+
+
