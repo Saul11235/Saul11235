@@ -1,0 +1,17 @@
+
+
+/* footer ----------------- */
+
+.style-footer {
+  margin-top    : 20px;
+  flex-shrink   : 0;
+}
+
+.btn-footer {
+  padding-top   : 20px;
+  padding-bottom: 20px;
+  font-size: 1.1em;
+}
+.icon-footer {
+  margin: 10px;
+}
