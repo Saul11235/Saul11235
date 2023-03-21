@@ -21,6 +21,10 @@ body {
 #content_page {
   flex: 1 0 auto;
 }
+.air {
+  margin-top    : 20px;
+  margin-bottom : 20px;
+}
 
 
 
