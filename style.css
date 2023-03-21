@@ -11,11 +11,18 @@ body {
 }
 
 /* header-container-------- */
-.header-container {
+.row-header{
   padding-top   : 20px;
   padding-bottom: 20px;
-
+  min-height    : 17rem;  
 }
+
+/* content------------------*/
+#content_page {
+  flex: 1 0 auto;
+}
+
+
 
 /* footer ----------------- */
 .style-footer {
