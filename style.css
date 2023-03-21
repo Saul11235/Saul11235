@@ -40,13 +40,13 @@ body {
   border        : 1px white solid;
   max-width     : 1000px;
 }
-.stylecard-skill:hover {
-  color           : black;
-  background-color: white;
-}
 .stylecard-headerskill {
   border-bottom : 1px white solid;
 }
+.air-button {
+  margin        : 52px;
+}
+
 
 
 
