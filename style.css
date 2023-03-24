@@ -31,6 +31,10 @@ body {
   padding-top   : 30px;
   padding-bottom: 30px;
 }
+.air-button {
+  margin        : 3px;
+  margin-bottom : 10px;
+}
  /* skills ----------------- */
 .skill-container {
   padding         : 20px;
@@ -43,11 +47,14 @@ body {
 .stylecard-headerskill {
   border-bottom : 1px white solid;
 }
-.air-button {
-  margin        : 52px;
+
+/* contact ---------------- */
+.contact-container {
+  border-radius : 20px;
+  margin        : 20px;
+  padding       : 20px;
+  max-width     : 400px;
 }
-
-
 
 
 /* footer ----------------- */
