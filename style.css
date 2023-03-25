@@ -49,12 +49,15 @@ body {
 }
 
 /* contact ---------------- */
+.row-skill {
+  max-width    : 400px;
+}
 .contact-container {
   border-radius : 20px;
   margin        : 20px;
   padding       : 20px;
-  max-width     : 400px;
 }
+
 
 
 /* footer ----------------- */
