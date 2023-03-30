@@ -42,7 +42,8 @@ body {
 }
 .stylecard-skill {
   border        : 1px white solid;
-  max-width     : 1000px;
+  min-height: 200px;
+
 }
 .stylecard-headerskill {
   border-bottom : 1px white solid;
