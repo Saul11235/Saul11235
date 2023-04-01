@@ -2,9 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="author"      content="">
-    <meta name="description" content="">
-    <meta name="keywords"    content="">
+    <meta name="author"      content="Edwin Saul ">
+    <meta name="description" content="presentation page developer">
+    <meta name="keywords"    content="dev, presentation, hero page, software developer">
     <meta name="viewport"    content="width=device-width, initial-scale=1">
     <title>Edwin Saul</title>
     <!-- favicon -->
@@ -18,7 +18,33 @@
 
   </head>
 
+  <!--  --------------------------------------------- -->
+
   <body class="bg-dark text-white">
+
+    <!-- BEGIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top affix-top">
+      <div class="container">
+        <a class="navbar-brand" >  <i class="bi bi-rocket-takeoff"></i> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+  	  <!-- -->
+            <li class="nav-item">
+	      <a class="nav-link" href="#About">
+	        About</a>
+            </li>
+	    <!-- -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+
+    
 
     <!-- Header ------------------------- --> 
     <div class="container-fluid text-center air ">
@@ -32,8 +58,8 @@
 
 
       <!-- about -->
-      <div class="container-fluid bg-light text-black air">
-      <div class="container ">
+      <div class="container-fluid bg-light text-black air" id="About">
+      <div class="container " >
 	<div class="row">
 	  <h1>About</h1>
 	</div>
@@ -306,6 +332,10 @@
       </a>
       </div>
     </footer>
+
+    <!-- Custom JS -->
+    <script src="js/autoHideNavbar.js"></script>
+
 
 
 
