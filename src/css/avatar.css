@@ -1,0 +1,17 @@
+.avatar-picture {
+  max-height: 250px;
+  box-shadow: 0px 0px 20px rgba(70, 70, 70, 0.4);
+  animation: zoomInOut 5s ease-in-out infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Tamaño inicial */
+  }
+  50% {
+    transform: scale(1.1); /* Zoom máximo */
+  }
+  100% {
+    transform: scale(1); /* Volver al tamaño inicial */
+  }
+}

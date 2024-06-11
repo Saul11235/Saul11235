@@ -1,0 +1,15 @@
+.btn {
+  padding: 2px;
+  margin: 4px;
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+
+#contentDiv {
+  padding:20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
