@@ -73,7 +73,7 @@ function item_widget_carrousel(path){
   //-----------------------------
   // card boostrap if exists image
   } else {
-    let contentText=React.createElement("div",null,switchTextReact("h2",t0,t1), switchTextReact("p",a0,a1),);
+    let contentText=React.createElement("div",null,switchTextReact("h5",t0,t1), switchTextReact("p",a0,a1),);
     let styleCenter={
       display:"flex",
       alignItems:"center",
@@ -88,8 +88,8 @@ function item_widget_carrousel(path){
     };
     card=React.createElement("a",{className:"card",href:link,style:styleCard},
       React.createElement("div",{className:"card-body col-12 row  text-black bg-white bg-gradient",style:{padding:0}},
-	React.createElement("img",{className:"col-8 ",src:image,style:styleImg}),
-	React.createElement("div",{className:"col-4 ",style:styleCenter},
+	React.createElement("img",{className:"col-7 ",src:image,style:styleImg}),
+	React.createElement("div",{className:"col-5 ",style:styleCenter},
 	  contentText,
 	),
       ),

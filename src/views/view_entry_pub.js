@@ -1,5 +1,6 @@
 
 function view_entry_pub() {
+  console.log("lolo");
 
   let markdown=switchMarkdown("pubs/"+LocalJsStorage_args+"/pub0.md","pubs/"+LocalJsStorage_args+"/pub1.md");
   let abstractVar=switchTextReact("p",LJS_get("pubs/"+LocalJsStorage_args+"/abs0.md"),LJS_get("pubs/"+LocalJsStorage_args+"/abs1.md"));

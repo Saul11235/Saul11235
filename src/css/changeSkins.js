@@ -57,18 +57,28 @@ function BulmaCreateCookieIfNotExist() {
 
 // STEP 2.2: define functions to switch themes
 function BulmaSkins_ligth(){
+  //
   document.getElementById("BulmaSkins-light").disabled=false;
   document.getElementById("BulmaSkins-dark").disabled=true;
+  document.getElementById("BulmaSkins-light-extra").disabled=false;
+  document.getElementById("BulmaSkins-dark-extra").disabled=true;
+  //
   document.getElementById("BulmaSkins-switch-dark").style.display="none";
   document.getElementById("BulmaSkins-switch-light").style.display="block";
+  //
   BulmaSkins_state=true;
   BulmaSkins_set(true);
 }
 function BulmaSkins_dark(){
+  //
   document.getElementById("BulmaSkins-dark").disabled=false;
   document.getElementById("BulmaSkins-light").disabled=true;
+  document.getElementById("BulmaSkins-dark-extra").disabled=false;
+  document.getElementById("BulmaSkins-light-extra").disabled=true;
+  //
   document.getElementById("BulmaSkins-switch-light").style.display="none";
   document.getElementById("BulmaSkins-switch-dark").style.display="block";
+  //
   BulmaSkins_state=false;
   BulmaSkins_set(false);
 }

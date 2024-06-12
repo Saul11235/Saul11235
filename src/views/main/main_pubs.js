@@ -56,6 +56,7 @@ function item_widget_carrousel_pubs(path){
   let styleOverflow={
     "overflow":"hidden",
     "text-overflow":"ellipsis",
+    "font-size":"0.95rem",
   };
   //
   //-----------------------------
@@ -63,7 +64,7 @@ function item_widget_carrousel_pubs(path){
   if (image==undefined){
     styleCard.padding="20px"
     card=React.createElement("a",{className:"card bg-dark bg-gradient text-white",href:link,style:styleCard},
-      React.createElement("h4",{style:styleOverflow},
+      React.createElement("h5",{style:styleOverflow},
 	React.createElement("i",{className:"bi bi-book"}),
 	switchTextReact("span",t0,t1)
       ),
@@ -72,7 +73,7 @@ function item_widget_carrousel_pubs(path){
   //-----------------------------
   // card boostrap if exists image
   } else {
-    let contentText=React.createElement("div",null,switchTextReact("h4",t0,t1), switchTextReact("p",a0,a1),);
+    let contentText=React.createElement("div",{style:{"font-size":"0.74rem"}},switchTextReact("h6",t0,t1), switchTextReact("span",a0,a1),);
     let styleCenter={
       display:"flex",
       alignItems:"center",
