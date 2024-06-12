@@ -17,12 +17,12 @@ function mainButton_projects(){
 
 function mainButton_skills(){
   let URL=LJS_makeUrl("skills","");
-  return buttonReact(["view skills","ver habilidades",URL,"bi bi-hammer"]);
+  return buttonReact(["view all skills","ver todas las habilidades",URL,"bi bi-hammer"]);
 }
 
 function mainButton_pubs(){
   let URL=LJS_makeUrl("pub","");
-  return buttonReact(["view publications","ver publicaciones",URL,"bi bi-book"]);
+  return buttonReact(["view all publications","ver todas las publicaciones",URL,"bi bi-book"]);
 }
 
 function mainButton_blog(){
