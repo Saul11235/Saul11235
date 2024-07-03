@@ -39,7 +39,7 @@ function createCardGrid(path,classNameCol="col-md-4 col-sm-6"){
     };
   };
   // cardbody
-  let cardBody =React.createElement("div",{className:"card-body text-black bg-white bg-gradient",overflow:"hidden",overflowText:"ellopsis"},
+  let cardBody =React.createElement("div",{className:"card-body bg-gradient estiloCard",overflow:"hidden",overflowText:"ellipsis"},
     React.createElement("h4",{className:"card-title"},switchTextReact("div",LJS_get(path+"/tit0"),LJS_get(path+"/tit1")) ),
     React.createElement("p",{className:"card-text",style:{overflow:"hidden",overflowText:"ellipsis"}},
       switchTextReact("div",LJS_get(path+"/abs0.md"),LJS_get(path+"/abs1.md"),{style:{overflowText:"ellopsis",overflow:"hidden"}}) ),

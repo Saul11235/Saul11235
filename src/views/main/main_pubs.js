@@ -63,7 +63,7 @@ function item_widget_carrousel_pubs(path){
   // card boostrap
   if (image==undefined){
     styleCard.padding="20px"
-    card=React.createElement("a",{className:"card bg-dark bg-gradient text-white",href:link,style:styleCard},
+    card=React.createElement("a",{className:"card bg-gradient estiloCard",href:link,style:styleCard},
       React.createElement("h5",{style:styleOverflow},
 	React.createElement("i",{className:"bi bi-book"}),
 	switchTextReact("span",t0,t1)
@@ -86,8 +86,8 @@ function item_widget_carrousel_pubs(path){
       padding:0,
       "object-fit":"cover",
     };
-    card=React.createElement("a",{className:"card",href:link,style:styleCard},
-      React.createElement("div",{className:"card-body col-12 row bg-white bg-gradient text-black",style:{padding:0}},
+    card=React.createElement("a",{className:"card estiloCard",href:link,style:styleCard},
+      React.createElement("div",{className:"card-body col-12 row bg-gradient",style:{padding:0}},
 	React.createElement("img",{className:"col-8 ",src:image,style:styleImg}),
 	React.createElement("div",{className:"col-4 ",style:styleCenter},
 	  contentText,

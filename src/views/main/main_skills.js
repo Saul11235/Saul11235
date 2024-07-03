@@ -49,7 +49,7 @@ function make_widget_main_skills(path) {
   };
   //......
   let link=LJS_makeUrl("s",LJS_formatPath(path)[1]);
-  let card=React.createElement("a",{className:"card bg-white bg-gradient text-black",style:styleCard,href:link},
+  let card=React.createElement("a",{className:"card bg-gradient estiloCard",style:styleCard,href:link},
     React.createElement("h5",null,
       React.createElement("i",{className:LJS_get(path+"/icon"),style:{"margin":"6px"}}),
       React.createElement("span",{style:{"margin":"6px"}},

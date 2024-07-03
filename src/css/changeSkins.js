@@ -92,7 +92,11 @@ function BulmaSkins_click() {
 
 // STEP 2.4: add event listener in switch
 function BulmaSkins_init(){
+  // ----
   BulmaCreateCookieIfNotExist();
+  //----
+  var BulmaSkins_switch=document.getElementById("BulmaSkins-switch")
+  BulmaSkins_switch.addEventListener("click",BulmaSkins_click);
 // STEP 2.1; config switch button
 if (BulmaSkins_get() === true) {
   BulmaSkins_ligth();
@@ -101,7 +105,6 @@ if (BulmaSkins_get() === true) {
   BulmaSkins_dark();
   BulmaSkins_state=false;
 };
-
-  var BulmaSkins_switch=document.getElementById("BulmaSkins-switch")
-  BulmaSkins_switch.addEventListener("click",BulmaSkins_click);
 }
+
+

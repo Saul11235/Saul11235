@@ -63,7 +63,7 @@ function item_widget_carrousel(path){
   // card boostrap
   if (image==undefined){
     styleCard.padding="20px"
-    card=React.createElement("a",{className:"card bg-primary bg-gradient text-white",href:link,style:styleCard},
+    card=React.createElement("a",{className:"card bg-gradient estiloCard",href:link,style:styleCard},
       React.createElement("h1",{style:styleOverflow},
 	React.createElement("i",{className:"bi bi-rocket"}),
 	switchTextReact("span",t0,t1)
@@ -87,7 +87,7 @@ function item_widget_carrousel(path){
       "object-fit":"cover",
     };
     card=React.createElement("a",{className:"card",href:link,style:styleCard},
-      React.createElement("div",{className:"card-body col-12 row  text-black bg-white bg-gradient",style:{padding:0}},
+      React.createElement("div",{className:"card-body col-12 row  bg-gradient estiloCard",style:{padding:0}},
 	React.createElement("img",{className:"col-7 ",src:image,style:styleImg}),
 	React.createElement("div",{className:"col-5 ",style:styleCenter},
 	  contentText,
