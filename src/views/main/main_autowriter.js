@@ -18,6 +18,7 @@ function main_autowriter() {
     "top":"50%",
     "left":"50%",
     display:"inline-block",
+    "text-align":"center",
   };
 
   
@@ -55,7 +56,7 @@ function main_autowriter() {
     display:"flex",
   };
   //-----------------------
-  let areaSquare=React.createElement("div",{className:"area",style:styleSquareArea},
+  let areaSquare=React.createElement("div",{className:"area has-text-centered",style:styleSquareArea},
 	    autowriterOutput,
             autowriterInput,
 	    React.createElement("ul",{className:"circles"},

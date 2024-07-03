@@ -2,6 +2,9 @@
 
 function view_index_skills() {
 
+  // config title
+  setTitle("skills","habilidades") 
+
   let list_input=LJS_getSort("skills");
   let widgets=[];
 

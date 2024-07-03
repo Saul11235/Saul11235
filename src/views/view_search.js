@@ -7,7 +7,7 @@ function view_search() {
     let tags2find=["projects","pubs","blog"];
     let keyPage="s";
      
-    setTitle("search "+input[0]);
+    setTitle("search "+input[0],"búsqueda "+input[0]);
 
     // make titleWidget
     let titleW=switchTextReact("span",LJS_get("view_main/search0")+" "+input[0]+" ",LJS_get("view_main/search1")+" "+input[0]+" ");

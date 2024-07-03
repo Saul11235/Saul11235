@@ -68,8 +68,8 @@ function switch_all_elements(switchText_var=true) {
   if (switchText_var){
     let valueSwitch=switchText_get();
     switchText_set(!valueSwitch);
-  }
-  let all_elements=document.getElementsByClassName("switch-text");
+  } 
+ let all_elements=document.getElementsByClassName("switch-text");
   for (var x=0; x<all_elements.length; x++ ) {
     switch_a_element(all_elements[x]);
   };
@@ -77,6 +77,9 @@ function switch_all_elements(switchText_var=true) {
   for (var x=0; x<all_div_elements.length; x++ ) {
     switch_a_div_element(all_div_elements[x]);
   };
+  // config title
+  swapTitle();
+  configTitle();
 }
 
 // config button to switch texts
@@ -96,5 +99,7 @@ if ( switchText_get()===undefined ) {
 //console.log(switchText_get());
 if (switchText_get()){
   switch_all_elements(false);
+} else {
+  configTitle();
 };
 

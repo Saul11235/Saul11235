@@ -5,7 +5,8 @@ function view_index_blog() {
     let tags2find=["blog"];
     let keyPage="blog";
      
-    setTitle("blog");
+    // config title
+    setTitle("blog","blog") 
 
     // make titleWidget
     let titleWidget=switchTextReact("h1",LJS_get("view_main/blog0"),LJS_get("view_main/blog1"));

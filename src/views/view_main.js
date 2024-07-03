@@ -2,7 +2,7 @@
 
 function view_main() {
 
-    setTitle("Edwin Saul");
+    setTitle("Edwin Saul","Edwin Saul");
 
   //--------------------------------
   //

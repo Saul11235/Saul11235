@@ -5,6 +5,9 @@ function view_all_tags() {
   let allkeys=Object.keys(LJS_getTags(""));
   let widgetAllTags=footer_tags_clean(allkeys);
 
+    // config title
+    setTitle("tags","etiquetas") 
+
   //--------------------------------
 
     let contentPage=React.createElement("div",{id:"contentDiv",className:"col-12",style:{minHeight:"50vh"}},

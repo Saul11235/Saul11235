@@ -5,7 +5,8 @@ function view_index_pubs() {
     let tags2find=["pubs"];
     let keyPage="pub";
      
-    setTitle("publications");
+    // config title
+    setTitle("publications","publicaciones") 
 
     // make titleWidget
     let titleWidget=switchTextReact("h1",LJS_get("view_main/pubs0"),LJS_get("view_main/pubs1"));

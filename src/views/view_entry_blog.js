@@ -5,6 +5,9 @@ function view_blog() {
   let abstractVar=switchTextReact("p",LJS_get("blog/"+LocalJsStorage_args+"/abs0.md"),LJS_get("blog/"+LocalJsStorage_args+"/abs1.md"));
   let titleVar=switchTextReact("h1",LJS_get("blog/"+LocalJsStorage_args+"/tit0"),LJS_get("blog/"+LocalJsStorage_args+"/tit1"));
 
+  // config title
+  setTitle(LJS_get("blog/"+LocalJsStorage_args+"/tit0"),LJS_get("blog/"+LocalJsStorage_args+"/tit1"));
+
   //--------------------------------
 
     let contentPage=React.createElement("div",{id:"contentDiv",className:"col-12",style:{minHeight:"50vh"}},

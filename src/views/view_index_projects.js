@@ -6,7 +6,8 @@ function view_index_projects() {
     let tags2find=["projects"];
     let keyPage="projects";
      
-    setTitle("projects");
+    // config title
+    setTitle("projects","proyectos") 
 
     // make titleWidget
     let titleWidget=switchTextReact("h1",LJS_get("view_main/projects0"),LJS_get("view_main/projects1"));
