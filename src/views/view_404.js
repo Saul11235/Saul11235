@@ -5,9 +5,9 @@ function view_404() {
 
   //--------------------------------
 
-    let contentPage=React.createElement("div",{id:"contentDiv",className:"col-12",style:{minHeight:"50vh"}},
+    let contentPage=React.createElement("div",{id:"contentDiv",className:"col-12",style:{minHeight:"50vh","display":"flex","justify-content":"center","align-items":"center"}},
       	  br,
-	  React.createElement("h1",null,"404 Error"),
+	  React.createElement("h1",{style:{"font-size":"5em"}},"404 Error"),
 	  br,
     );
 

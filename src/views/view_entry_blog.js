@@ -39,7 +39,7 @@ function view_blog() {
 //-------------------------------------------------------------------------
 
 LJS_setMainFuncs("b",()=>{
-  if (LJS_exists("blog/"+LocalJsStorage_args)) {
+  if (LJS_exists("blog/"+LocalJsStorage_args) && LocalJsStorage_args!="__json__") {
     ReactDOM.render(React.createElement(view_blog), document.getElementById('root'));
   } else {
     ReactDOM.render(React.createElement(view_404), document.getElementById('root'));

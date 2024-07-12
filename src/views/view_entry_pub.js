@@ -39,7 +39,7 @@ function view_entry_pub() {
 //-------------------------------------------------------------------------
 
 LJS_setMainFuncs("pu",()=>{
-  if (LJS_exists("pubs/"+LocalJsStorage_args)) {
+  if (LJS_exists("pubs/"+LocalJsStorage_args) && LocalJsStorage_args!="__json__"   ) {
     ReactDOM.render(React.createElement(view_entry_pub), document.getElementById('root'));
   } else {
     ReactDOM.render(React.createElement(view_404), document.getElementById('root'));

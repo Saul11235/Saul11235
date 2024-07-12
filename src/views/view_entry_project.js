@@ -39,7 +39,7 @@ function view_project() {
 //-------------------------------------------------------------------------
 
 LJS_setMainFuncs("p",()=>{
-  if (LJS_exists("projects/"+LocalJsStorage_args)) {
+  if (LJS_exists("projects/"+LocalJsStorage_args) && LocalJsStorage_args!="__json__" ) {
     ReactDOM.render(React.createElement(view_project), document.getElementById('root'));
   } else {
     ReactDOM.render(React.createElement(view_404), document.getElementById('root'));
