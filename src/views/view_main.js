@@ -19,7 +19,6 @@ function view_main() {
 	  //main_apendix(),
 	  //mainButton_404(),
 	  br,
-	  br,
     );
   //--------------------------------
   //
