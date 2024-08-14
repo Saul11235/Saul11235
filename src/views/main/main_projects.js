@@ -29,7 +29,7 @@ function widget_carrousel_projects() {
     //-------------------------------------------
   };
   //-----------------------------
-  let divCarousel=React.createElement("div",{className:"slider"},items);
+  let divCarousel=React.createElement("div",{className:"slider card"},items);
   //-----------------------------
   return divCarousel;
 };
@@ -63,7 +63,7 @@ function item_widget_carrousel(path){
   // card boostrap
   if (image==undefined){
     styleCard.padding="20px"
-    card=React.createElement("a",{className:"card bg-gradient estiloCard",href:link,style:styleCard},
+    card=React.createElement("a",{className:"bg-gradient estiloCard",href:link,style:styleCard},
       React.createElement("h1",{style:styleOverflow},
 	React.createElement("i",{className:"bi bi-rocket"}),
 	switchTextReact("span",t0,t1)
