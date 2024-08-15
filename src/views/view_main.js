@@ -15,10 +15,10 @@ function view_main() {
 	  main_blog(),
 	  main_pubs(),
 //	  main_game(),
-//	  main_contact(),
+	  main_contact(),
 	  //main_apendix(),
 	  //mainButton_404(),
-	  br,
+//	  br,
     );
   //--------------------------------
   //

@@ -20,6 +20,6 @@ function hideSpinner() {
   var spinner = document.getElementById('overlay');
   setTimeout(() => {
     spinner.style.display = 'none';
-  }, 150);
+  }, 40);
 };
 

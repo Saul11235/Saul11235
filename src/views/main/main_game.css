@@ -1,0 +1,172 @@
+/* Estilos de juego para boton */
+#game_button {
+  background: none;
+  border: none;
+  cursor: pointer; 
+  position: relative;
+  overflow: hidden; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+#game_button::before {
+    content: '';
+    display: block; 
+    padding-top: 60%;
+}
+/*----------------------------*/
+/* ESTILOS DE BOTON DE JUEGO  */
+/*----------------------------*/
+.cohete_btn {
+  background:none;
+  position: absolute;
+   top: 25%; 
+    left: 34%; 
+    width: 30%;
+    height: auto; 
+    animation: cohete_motor 0.5s infinite;
+}
+@keyframes cohete_motor {
+  0%, 100% {
+   top: 25%;
+  };
+  50% {
+   top: 24.5%;
+  };
+}
+.ground_btn{
+  background:none;
+  position: absolute; 
+    top: 66%;
+    left: 3%; 
+    width: 94%;
+    height: auto; 
+}
+/*--------------------------*/
+.star1 {
+  background:none;
+  transform: rotate(45deg);
+  position: absolute; 
+  top: 15%;
+  left: 18%;
+  width: 3%;
+  height: auto; 
+  animation: star_animA 2.5s infinite;
+}
+@keyframes star_animA {
+  0%, 100% {opacity:0.5;};
+  50% {opacity:1;};
+}
+.star2 {
+  transform: rotate(75deg);
+  position: absolute; 
+  top: 25%;
+  left: 78%;
+  width: 4%;
+  height: auto; 
+  animation: star_animB 1.2s infinite;
+}
+@keyframes star_animB {
+  0%, 100% {opacity:0.55;};
+  50% {opacity:1;};
+}
+.star3 {
+  transform: rotate(75deg);
+  position: absolute; 
+  top: 45%;
+  left: 6%;
+  width: 2%;
+  height: auto; 
+  animation: star_animC .4s infinite;
+}
+@keyframes star_animC {
+  0%, 100% {opacity:0.85;};
+  50% {opacity:1;};
+}
+.star4 {
+  transform: rotate( 5deg);
+  position: absolute; 
+  top: 65%;
+  left: 86%;
+  width: 2%;
+  height: auto; 
+  animation: star_animD 1.2s infinite;
+}
+@keyframes star_animD {
+  0%, 100% {opacity:0.85;};
+  50% {opacity:.4;};
+}
+.star5 {
+  transform: rotate(75deg);
+  position: absolute; 
+  top: 35%;
+  left: 36%;
+  width: 2%;
+  height: auto; 
+  animation: star_animE .2s infinite;
+}
+@keyframes star_animE {
+  0%, 100% {opacity:0.85;};
+  50% {opacity:.71;};
+}
+.star6 {
+  transform: rotate(75deg);
+  position: absolute; 
+  top: 9%;
+  left: 94%;
+  width: 2%;
+  height: auto; 
+  animation: star_animF 1.72s infinite;
+}
+@keyframes star_animF {
+  0%, 100% {opacity:0.35;};
+  50% {opacity:1;};
+}
+.star7 {
+  transform: rotate(75deg);
+  position: absolute; 
+  top: 69%;
+  left: 15%;
+  width: 2%;
+  height: auto; 
+  animation: star_animG 1.72s infinite;
+}
+@keyframes star_animG {
+  0%, 100% {opacity:0.35;};
+  50% {opacity:1;};
+}
+
+.star8 {
+  transform: rotate(75deg);
+  position: absolute; 
+  top: 15%;
+  left: 64%;
+  width: 2%;
+  height: auto; 
+  animation: star_animH 1.72s infinite;
+}
+@keyframes star_animH {
+  0%, 100% {opacity:0.35;};
+  50% {opacity:1;};
+}
+
+.star9 {
+  transform: rotate(75deg);
+  position: absolute; 
+  top: 49%;
+  left: 72%;
+  width: 2%;
+  height: auto; 
+  animation: star_animI 1.75s infinite;
+}
+@keyframes star_animI {
+  0%, 100% {opacity:0.35;};
+  50% {opacity:1;};
+}
+
+
+
+
+
+

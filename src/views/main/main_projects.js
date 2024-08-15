@@ -83,13 +83,14 @@ function item_widget_carrousel(path){
       "object-fit":"cover",
     };
     let styleImg={
-      padding:0,
       "object-fit":"cover",
+      height:"100%",
     };
     card=React.createElement("a",{className:"card",href:link,style:styleCard},
-      React.createElement("div",{className:"card-body col-12 row  bg-gradient estiloCard",style:{padding:0}},
-	React.createElement("img",{className:"col-7 ",src:image,style:styleImg}),
-	React.createElement("div",{className:"col-5 ",style:styleCenter},
+      React.createElement("div",{className:"card-body col-12 row  bg-gradient estiloCard",style:{padding:10}},
+	React.createElement("div",{className:"col-1"}),
+	React.createElement("img",{className:"col-6",src:image,width:"100%",style:styleImg}),
+	React.createElement("div",{className:"col-4",style:styleCenter},
 	  contentText,
 	),
       ),
