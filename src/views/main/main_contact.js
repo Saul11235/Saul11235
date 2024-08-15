@@ -24,17 +24,17 @@ function main_contact() {
 	backgroundColor:principalBlue,
 	color:"white",
 	"border-radius":"10px",
-	"margin":"50px",
-	"padding":"40px",
-	"min-height":"20vh",  //<--- altura panel contacto
+	"margin":"5px",
+	"padding":"5px",
+	"min-height":"30vh",  //<--- altura panel contacto
 	"align-items":"center",
       } 
     };
     let styleCol={
-      className:"col-sm-12 col-md-6",
+      className:"col-xs-12 col-sm-6",
 
-      pading:"20px",
-      margin:"20px",
+      pading:"10px",
+      margin:"10px",
     };
     let tile=cr("div",styleTile,
       cr("div",styleCol,contactBody()),

@@ -48,6 +48,7 @@ function item_widget_carrousel(path){
   //-----------------------------
   let styleCard={
     height:"50vh",
+    "max-height":"400px",
     display:"flex",
     alignItems:"center",
     justifyContent:"center",
@@ -77,10 +78,12 @@ function item_widget_carrousel(path){
     let styleCenter={
       display:"flex",
       alignItems:"center",
-      justifyContent:"center",
+      justifyContent:"start",
       overflow:"hidden",
       textDecoration:"none",
       "object-fit":"cover",
+      padding:"8px",
+      fontSize:"clamp(0.7rem, 1.3vw, 1.3rem)",
     };
     let styleImg={
       "object-fit":"cover",
