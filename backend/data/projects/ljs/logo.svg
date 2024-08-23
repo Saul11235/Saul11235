@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="620"
-   height="320"
-   viewBox="0 0 164.04165 84.666664"
+   width="400"
+   height="210"
+   viewBox="0 0 105.83347 55.562498"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
@@ -25,10 +25,10 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.8409652"
-     inkscape:cx="299.65568"
-     inkscape:cy="274.68437"
+     inkscape:cx="105.83078"
+     inkscape:cy="79.67036"
      inkscape:window-width="1366"
-     inkscape:window-height="745"
+     inkscape:window-height="705"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -37,10 +37,10 @@
      id="defs2">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="-18.24788 : 59.751054 : 1"
+       inkscape:vp_x="-18.247911 : 30.646888 : 1"
        inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="131.66242 : 56.604863 : 1"
-       inkscape:persp3d-origin="93.203027 : -71.779776 : 1"
+       inkscape:vp_z="131.66273 : 27.500698 : 1"
+       inkscape:persp3d-origin="93.203151 : -100.88394 : 1"
        id="perspective299" />
   </defs>
   <g
@@ -52,7 +52,7 @@
        transform="translate(-18.653883,1.3348139)" />
     <g
        id="g747"
-       transform="matrix(0.64317334,0,0,0.64317334,22.403911,4.7703435)">
+       transform="matrix(0.64317334,0,0,0.64317334,-6.2840731,-8.4253255)">
       <g
          id="g527"
          transform="translate(-8.493826,0.46600489)">

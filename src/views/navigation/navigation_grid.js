@@ -23,8 +23,25 @@ function createCardGrid(path,classNameCol="col-md-4 col-sm-6"){
   // img for top card
   let heightImg="150px";
   let image=image_get(path);  
-  let imgTop=React.createElement("div",{className:"card-img-top",style:{height:heightImg,overflow:"hidden",overflowText:"ellipsis"}},
-      React.createElement("img",{src:image,width:"100%",style:{"object-fit":"cover"}}),
+  // styles for imgtop - no SVG
+     let styleImgContainer={height:heightImg,overflow:"hidden",overflowText:"ellipsis"};
+     let styleImgItem={width:"100%","object-fit":"cover"};
+  // let styls ifor imgtop - SVG
+     let isSVG=false;
+     if(image!==undefined){
+       if(image.endsWith(".svg")&&!image.endsWith("ZZZ.svg")){isSVG=true};
+     };
+     if (isSVG){
+       styleImgContainer={
+          margin:"0px",height:"100%",display:"flex",justifyContent:"center",alignItems:"center",overflow:"hidden",position:"relative",
+       };
+       styleImgItem={
+          position:"absolute",maxHeight:"100%",maxWidth:"100%",height:"auto",width:"auto",objectFit:"contain",
+       };
+     };
+  // ------------------   
+  let imgTop=React.createElement("div",{className:"card-img-top",style:styleImgContainer},
+      React.createElement("img",{src:image,style:styleImgItem}),
   );
   if (image==undefined) {
     if (first=="projects") {
@@ -38,6 +55,7 @@ function createCardGrid(path,classNameCol="col-md-4 col-sm-6"){
          React.createElement("div",{className:"row"},React.createElement("h1",{className:"bi bi-card-text"})));
     };
   };
+  console.log(image);
   // cardbody
   let cardBody =React.createElement("div",{className:"card-body bg-gradient estiloCard",overflow:"hidden",overflowText:"ellipsis"},
     React.createElement("h4",{className:"card-title"},switchTextReact("div",LJS_get(path+"/tit0"),LJS_get(path+"/tit1")) ),

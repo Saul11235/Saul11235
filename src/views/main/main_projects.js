@@ -22,6 +22,10 @@ function widget_carrousel_projects() {
  //-------------------------------
   let projects=getDataForCarrousel();
   let items=[];
+  let styleCarrousel={
+    height:"40vh",
+    overflow:"hidden",
+  };
   //-----------------------------
   for (let i=0;i<projects.length;i++){
     // creating items for carousel__viewport
@@ -29,7 +33,7 @@ function widget_carrousel_projects() {
     //-------------------------------------------
   };
   //-----------------------------
-  let divCarousel=React.createElement("div",{className:"slider card"},items);
+  let divCarousel=React.createElement("div",{className:"slider card",style:styleCarrousel},items);
   //-----------------------------
   return divCarousel;
 };
@@ -47,8 +51,7 @@ function item_widget_carrousel(path){
   let card=React.createElement("div");
   //-----------------------------
   let styleCard={
-    height:"50vh",
-    "max-height":"400px",
+    height:"40vh",
     display:"flex",
     alignItems:"center",
     justifyContent:"center",
@@ -74,8 +77,9 @@ function item_widget_carrousel(path){
   //-----------------------------
   // card boostrap if exists image
   } else {
-    let contentText=React.createElement("div",null,switchTextReact("h5",t0,t1), switchTextReact("p",a0,a1),);
+    let contentText=React.createElement("div",null,switchTextReact("h5",t0,t1),br2,switchTextReact("p",a0,a1),);
     let styleCenter={
+      padding:"10px",
       display:"flex",
       alignItems:"center",
       justifyContent:"start",
@@ -83,16 +87,33 @@ function item_widget_carrousel(path){
       textDecoration:"none",
       "object-fit":"cover",
       padding:"8px",
-      fontSize:"clamp(0.7rem, 1.3vw, 1.3rem)",
+      lineHeight: 1.1,
+      fontSize:"clamp(1.3rem, 1.4vw, 1.5rem)",
+    };
+    let styleContainerImg={
+//      backgroundImage:"url('"+image+"')",
+      margin:0,
+      height:"100%",
+      display:"flex",
+      justifyContent:"center",
+      alignItems:"center",
+      overflow:"hidden",
+      position:"relative",
     };
     let styleImg={
-      "object-fit":"cover",
-      height:"100%",
+      position:"absolute",
+      maxHeight:"100%",
+      maxWidth:"100%",
+      height:"auto",
+      width:"auto",
+      objectFit:"contain",
     };
     card=React.createElement("a",{className:"card",href:link,style:styleCard},
-      React.createElement("div",{className:"card-body col-12 row  bg-gradient estiloCard",style:{padding:10}},
+      React.createElement("div",{className:"card-body col-12 row  bg-gradient estiloCard",style:{padding:15}},
 	React.createElement("div",{className:"col-1"}),
-	React.createElement("img",{className:"col-6",src:image,width:"100%",style:styleImg}),
+	React.createElement("div",{className:"col-6",style:styleContainerImg},
+	  React.createElement("img",{src:image,style:styleImg})
+	  	  ),
 	React.createElement("div",{className:"col-4",style:styleCenter},
 	  contentText,
 	),
