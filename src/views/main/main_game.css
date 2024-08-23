@@ -175,6 +175,40 @@
   50% {opacity:1;};
 }
 
+/* indicaciones para oscurecimiento de pantalla */
+.oscurece_pantalla{
+ background-color:#293e66;
+ position:fixed;width:100vw;height:100vh;z-index:2000;opacity:0;
+ animation: oscurece_pantalla_anim 2s forwards;
+}
+@keyframes oscurece_pantalla_anim{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  };
+}
+
+
+
+
+/* indicaciones para aclarar pantalla */
+
+.aclara_pantalla{
+ animation: aclara_pantalla_anim 2s forwards;
+}
+@keyframes aclara_pantalla_anim{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    z-index:0;
+  };
+}
+
+
 
 
 

@@ -30,12 +30,22 @@ function main_game() {
 //  para activar juego
 //--------------------------------------
 
+function aclarar_pantalla() {
+  let pantalla_elem= document.getElementById('pantalla_color');
+  pantalla_elem.classList.add("aclara_pantalla");
+ 
+};
+
+//----
+
 function iniciar_ventana_juego() {
   console.log("INICIAR VENTANA JUEGO");
   // animacion de despegue de cohete
   let cohete_img= document.getElementById('cohete_img');
   cohete_img.classList.add('cohete_despega');
   // animacion que oscurece la pantalla
+  let pantalla_elem= document.getElementById('pantalla_color');
+  pantalla_elem.classList.add("oscurece_pantalla");
   
   //  animacion que carga la ventana de juego
 
