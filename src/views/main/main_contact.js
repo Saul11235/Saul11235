@@ -6,13 +6,14 @@ function contactBody() {
   let titulo=switchTextReact("h2",LJS_get("view_main/contact_title0"),LJS_get("view_main/contact_title1"));
   let texto1=switchTextReact("p",LJS_get("view_main/contact_text_1_0"),LJS_get("view_main/contact_text_1_1"));
   let botones=tag_link("view_main/contact_links");
-  let texto2=switchTextReact("p",LJS_get("view_main/contact_text_2_0"),LJS_get("view_main/contact_text_2_1"));
+  //let texto2=switchTextReact("p",LJS_get("view_main/contact_text_2_0"),LJS_get("view_main/contact_text_2_1"));
+  list.push(br4);
   list.push(texto1);
   list.push(botones);
-  list.push(br4);
-  list.push(texto2);
-  let subbody=cr("div",{style:{"margin":"5px"}},list);
-  return cr("div",{style:{"margin":"5px"}},titulo,subbody);
+  //list.push(br4);
+  //list.push(texto2);
+  let subbody=cr("div",{style:{"margin":"10px"}},list);
+  return cr("div",{style:{"margin":"5px"},align:"center"},titulo,subbody);
 };
 
 function main_contact() {
@@ -24,8 +25,8 @@ function main_contact() {
 	backgroundColor:principalBlue,
 	color:"white",
 	"border-radius":"10px",
-	"margin":"5px",
-	"padding":"5px",
+	"margin":"10px",
+	"padding":"10px",
 	"min-height":"30vh",  //<--- altura panel contacto
 	"align-items":"center",
       } 

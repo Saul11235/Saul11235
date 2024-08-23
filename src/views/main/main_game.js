@@ -10,7 +10,7 @@ function main_game() {
     let configMain={"id":"game_button","class":"col-12",};
     let lista=[];
     // colocando cohete y suelo
-    lista.push(cr("img",{src:"./src/img/game/rocket.svg","class":"cohete_btn"}));
+    lista.push(cr("img",{src:"./src/img/game/rocket.svg","class":"cohete_btn",id:"cohete_img"}));
     lista.push(cr("img",{src:"./src/img/game/ground.svg","class":"ground_btn"}));
     // colocando estrellas
     lista.push(cr("img",{src:"./src/img/game/star.svg","class":"star1"}));
@@ -32,6 +32,15 @@ function main_game() {
 
 function iniciar_ventana_juego() {
   console.log("INICIAR VENTANA JUEGO");
+  // animacion de despegue de cohete
+  let cohete_img= document.getElementById('cohete_img');
+  cohete_img.classList.add('cohete_despega');
+  // animacion que oscurece la pantalla
+  
+  //  animacion que carga la ventana de juego
+
+  //  animacion que aclara la pantalla
+
 }
 
 //--------------------------------------

@@ -19,22 +19,32 @@
 /* ESTILOS DE BOTON DE JUEGO  */
 /*----------------------------*/
 .cohete_btn {
-  background:none;
-  position: absolute;
-   top: 25%; 
-    left: 34%; 
-    width: 30%;
-    height: auto; 
-    animation: cohete_motor 0.5s infinite;
+ background:none;position: absolute;top:25%;left:34%;width:30%;height: auto; 
+ animation: cohete_motor 0.5s infinite;
 }
 @keyframes cohete_motor {
   0%, 100% {
    top: 25%;
-  };
+  }
   50% {
-   top: 24.5%;
+   top: 24%;
   };
 }
+/*------------------------*/
+.cohete_despega{
+ background:none;position: absolute;top:25%;left:34%;width:30%;height: auto; 
+ animation: cohete_motor_despega 2s forwards;
+}
+@keyframes cohete_motor_despega {
+  0% {
+   top: 25%;
+  }
+  100% {
+   top: -200%;
+  };
+}
+
+/*------------------------*/
 .ground_btn{
   background:none;
   position: absolute; 
@@ -55,7 +65,7 @@
   animation: star_animA 2.5s infinite;
 }
 @keyframes star_animA {
-  0%, 100% {opacity:0.5;};
+  0%, 100% {opacity:0.5;}
   50% {opacity:1;};
 }
 .star2 {
@@ -68,7 +78,7 @@
   animation: star_animB 1.2s infinite;
 }
 @keyframes star_animB {
-  0%, 100% {opacity:0.55;};
+  0%, 100% {opacity:0.55;}
   50% {opacity:1;};
 }
 .star3 {
@@ -81,7 +91,7 @@
   animation: star_animC .4s infinite;
 }
 @keyframes star_animC {
-  0%, 100% {opacity:0.85;};
+  0%, 100% {opacity:0.85;}
   50% {opacity:1;};
 }
 .star4 {
@@ -94,7 +104,7 @@
   animation: star_animD 1.2s infinite;
 }
 @keyframes star_animD {
-  0%, 100% {opacity:0.85;};
+  0%, 100% {opacity:0.85;}
   50% {opacity:.4;};
 }
 .star5 {
@@ -107,7 +117,7 @@
   animation: star_animE .2s infinite;
 }
 @keyframes star_animE {
-  0%, 100% {opacity:0.85;};
+  0%, 100% {opacity:0.85;}
   50% {opacity:.71;};
 }
 .star6 {
@@ -120,7 +130,7 @@
   animation: star_animF 1.72s infinite;
 }
 @keyframes star_animF {
-  0%, 100% {opacity:0.35;};
+  0%, 100% {opacity:0.35;}
   50% {opacity:1;};
 }
 .star7 {
@@ -133,7 +143,7 @@
   animation: star_animG 1.72s infinite;
 }
 @keyframes star_animG {
-  0%, 100% {opacity:0.35;};
+  0%, 100% {opacity:0.35;}
   50% {opacity:1;};
 }
 
@@ -147,7 +157,7 @@
   animation: star_animH 1.72s infinite;
 }
 @keyframes star_animH {
-  0%, 100% {opacity:0.35;};
+  0%, 100% {opacity:0.35;}
   50% {opacity:1;};
 }
 
@@ -161,7 +171,7 @@
   animation: star_animI 1.75s infinite;
 }
 @keyframes star_animI {
-  0%, 100% {opacity:0.35;};
+  0%, 100% {opacity:0.35;}
   50% {opacity:1;};
 }
 

@@ -18,7 +18,8 @@ function view_main() {
 	  main_contact(),
 	  //main_apendix(),
 	  //mainButton_404(),
-//	  br,
+	  br,
+	  br2,
     );
   //--------------------------------
   //
