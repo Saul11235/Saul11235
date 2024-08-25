@@ -179,7 +179,7 @@
 .oscurece_pantalla{
  background-color:#293e66;
  position:fixed;width:100vw;height:100vh;z-index:2000;opacity:0;
- animation: oscurece_pantalla_anim 2s forwards;
+ animation: oscurece_pantalla_anim 0.5s forwards;
 }
 @keyframes oscurece_pantalla_anim{
   0% {
@@ -196,7 +196,7 @@
 /* indicaciones para aclarar pantalla */
 
 .aclara_pantalla{
- animation: aclara_pantalla_anim 2s forwards;
+ animation: aclara_pantalla_anim 0.5s forwards;
 }
 @keyframes aclara_pantalla_anim{
   0% {

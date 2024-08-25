@@ -33,6 +33,12 @@ function main_game() {
 function aclarar_pantalla() {
   let pantalla_elem= document.getElementById('pantalla_color');
   pantalla_elem.classList.add("aclara_pantalla");
+  setTimeout(() => {
+    //  animacion que carga la ventana de juego
+    pantalla_elem.style.display="none"
+   }, 500);
+ 
+
  
 };
 
@@ -46,10 +52,14 @@ function iniciar_ventana_juego() {
   // animacion que oscurece la pantalla
   let pantalla_elem= document.getElementById('pantalla_color');
   pantalla_elem.classList.add("oscurece_pantalla");
-  
-  //  animacion que carga la ventana de juego
-
-  //  animacion que aclara la pantalla
+  //--------------
+   setTimeout(() => {
+    //  animacion que carga la ventana de juego
+    ReactDOM.render(React.createElement(ReactGame), document.getElementById('root'));
+    //  animacion que aclara la pantalla
+    aclarar_pantalla();
+   }, 500);
+  // --------------
 
 }
 

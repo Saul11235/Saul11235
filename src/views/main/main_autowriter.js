@@ -30,6 +30,7 @@ function main_autowriter() {
       color:"white",
       backgroundColor: principalBlue,
       minHeight:"50vh",
+      overflow:"hidden",
       borderRadius: 0,
     };
 

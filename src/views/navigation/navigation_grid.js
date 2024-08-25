@@ -55,7 +55,7 @@ function createCardGrid(path,classNameCol="col-md-4 col-sm-6"){
          React.createElement("div",{className:"row"},React.createElement("h1",{className:"bi bi-card-text"})));
     };
   };
-  console.log(image);
+  //console.log(image);
   // cardbody
   let cardBody =React.createElement("div",{className:"card-body bg-gradient estiloCard",overflow:"hidden",overflowText:"ellipsis"},
     React.createElement("h4",{className:"card-title"},switchTextReact("div",LJS_get(path+"/tit0"),LJS_get(path+"/tit1")) ),
