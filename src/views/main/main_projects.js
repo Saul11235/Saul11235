@@ -88,7 +88,7 @@ function item_widget_carrousel(path){
       "object-fit":"cover",
       padding:"8px",
       lineHeight: 1.1,
-      fontSize:"clamp(1.3rem, 1.4vw, 1.5rem)",
+      fontSize:"clamp(1.1rem, 1.2vw, 1.3rem)",
     };
     let styleContainerImg={
 //      backgroundImage:"url('"+image+"')",

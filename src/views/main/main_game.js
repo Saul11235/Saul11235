@@ -56,11 +56,12 @@ function iniciar_ventana_juego() {
    setTimeout(() => {
     //  animacion que carga la ventana de juego
     ReactDOM.render(React.createElement(ReactGame), document.getElementById('root'));
+    // configurar Joystick
+    ConfiguraJoystick();
     //  animacion que aclara la pantalla
     aclarar_pantalla();
    }, 500);
   // --------------
-
 }
 
 //--------------------------------------
