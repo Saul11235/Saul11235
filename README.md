@@ -1,6 +1,6 @@
 # Hi I'm Edwin Saul/Saul11235
 
-Hi, I'm a developer from Cusco Peru :rocket: 
+Hi, I'm a developer from Cusco, Peru :rocket: 
 i like programmable calculators, gamedev, python language
 and software development in general.
 
