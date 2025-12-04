@@ -24,7 +24,17 @@ var margen_jugabilidad = 4  // este es un margen de recorte en la deteccion de c
 
 //
 // ELEMENTO GENERAL 
-estiloContenedorJuego ={position:"relative",color: "white",backgroundColor:principalBlue,padding:"0",height:"100vh",width:"100vw", margin:"0",};
+estiloContenedorJuego ={
+  position:"relative",
+  color: "white",
+  backgroundColor:principalBlue,
+  padding:"0",
+  height:"100vh",
+  height:"100svh",  //  <-- compatibilidad
+  height:"100dvh",  //  <-- compatibilidad
+  width:"100vw",
+  margin:"0",
+};
 estiloContenedorElem = {
   position:"fixed",
   display:"flex",
@@ -34,16 +44,30 @@ estiloContenedorElem = {
   padding:"0",
   margin:"0",
   height:"100vh",
+  height:"100svh",  //  <-- compatibilidad
+  height:"100dvh",  //  <-- compatibilidad
   width:"100vw",
   justifyContent:"center",
   alignItems:"center",   
   //border: '1px solid cyan', // <-- TEST BORDER
 
 };
-estiloBotonJoystick   ={padding:"0px",margin:"0",height:"100vh",width:"50vw",cursor:"default",opacity:"0",border:"0", };
+estiloBotonJoystick   ={
+  padding:"0px",
+  margin:"0",
+  height:"100vh",
+  height:"100svh",  //  <-- compatibilidad
+  height:"100dvh",  //  <-- compatibilidad
+  width:"50vw",
+  cursor:"default",
+  opacity:"0",
+  border:"0", 
+};
 estiloPantallaJuego = {
   aspectRatio: "7/8",
   height: "100vh",
+  height:"100svh",  //  <-- compatibilidad
+  height:"100dvh",  //  <-- compatibilidad
   width: "100vw",
   maxHeight: "calc(100vw * 8 / 7)",
   maxWidth: "calc(100vh * 7 / 8)",
@@ -105,6 +129,8 @@ estiloImagenMenu = {
 };
 estiloContenedorMenu = {
   height: "100vh",
+  height:"100svh",  //  <-- compatibilidad
+  height:"100dvh",  //  <-- compatibilidad
   display: "flex",
   alignItems: "center",
   //border: '2px solid yellow', // <-- TEST BORDER
@@ -121,7 +147,9 @@ function ReactIconosMenu(){ // un contenedor de imagenes
 // --------------------------------
 
 estiloContenedorPuntuacion= {
-  height: "100vh",
+  //height: "100vh",
+  //height:"100svh",  //  <-- compatibilidad
+  //height:"100dvh",  //  <-- compatibilidad
   display: "flex",
   flexDirection: "column",
   //  justifyContent: "space-between",
@@ -133,6 +161,9 @@ estiloContenedorPuntuacion= {
 
   //aspectRatio: "7/8",
   height: "100vh",
+  height:"100svh",  //  <-- compatibilidad
+  height:"100dvh",  //  <-- compatibilidad
+ 
   width: "100vw",
   //maxHeight: "calc(100vw * 8 / 7)",
   // maxWidth: "calc(100vh * 7 / 8)",
@@ -170,6 +201,9 @@ function ReactPuntuacion(){
 
 estiloWidgetPantallaJuego ={
   height     : "100vh",
+  height:"100svh",  //  <-- compatibilidad
+  height:"100dvh",  //  <-- compatibilidad
+ 
   display    : "flex",
   alignItems : "center",
   position   : "absolute",
@@ -179,7 +213,7 @@ estiloWidgetPantallaJuego ={
   alignItems: "flex-start",
 
   aspectRatio: "7/8",
-  height: "100vh",
+
   width: "100vw",
   maxHeight: "calc(100vw * 8 / 7)",
   maxWidth: "calc(100vh * 7 / 8)",
