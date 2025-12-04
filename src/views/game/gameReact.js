@@ -582,6 +582,7 @@ function logicaJuego_timer() {
 
 function puntuacion_nuevo(){ // funcion que configura puntuacion de juego nuevo
   points_now = 0;
+  points_top = Math.max(points_top,puntuacion_getCookie());  // llama a valores de la cookie
   document.getElementById("TXT1").textContent = points_now;
   document.getElementById("TXT2").textContent = "top: "+points_top;
 };
@@ -591,7 +592,39 @@ function puntuacion_calificar(puntos) { // funcion que aumenta puntaje
   if (points_now>points_top) { points_top = points_now};
   document.getElementById("TXT1").textContent = points_now;
   document.getElementById("TXT2").textContent = "top: "+points_top;
+  puntuacion_setCookie(points_top);
 };
+
+
+
+function puntuacion_setCookie(val) {
+  // Guarda "val" en una cookie llamada "puntuacionES" durante 1 año
+  const dias = 365;
+  const fecha = new Date();
+  fecha.setTime(fecha.getTime() + (dias * 24 * 60 * 60 * 1000));
+  const expira = "expires=" + fecha.toUTCString();
+  document.cookie = "puntuacionES=" + encodeURIComponent(val) + ";" + expira + ";path=/";
+  console.log("Cookie guardada:", val);
+}
+
+
+function puntuacion_getCookie() {
+  // Lee la cookie "puntuacionES"
+  const nombre = "puntuacionES=";
+  const decodedCookie = decodeURIComponent(document.cookie);
+  const partes = decodedCookie.split(";");
+  for (let parte of partes) {
+    parte = parte.trim();
+    if (parte.indexOf(nombre) === 0) {
+      const valor = parte.substring(nombre.length, parte.length);
+      const num = Number(valor);
+      return isNaN(num) ? 0 : num;
+    }
+  }
+  return 0; // En caso de no existir o error
+}
+
+
 
 //
 // CONFIGURANDO ACCIONES DEL JOYSTICK
