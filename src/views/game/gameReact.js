@@ -646,49 +646,64 @@ function menu_again(){
 //
 // CONECTANDO ELEMENTOS DEL JOYSTICK
 //
-function ConfiguraJoystick() {
-const boton1 = document.getElementById("Btn1");
-    boton1.addEventListener("mousedown", function() {
-      joy1_ON();
-    });
-    boton1.addEventListener("mouseup", function() {
-      joy1_OFF();
-    });
-const boton2 = document.getElementById("Btn2");
-    boton2.addEventListener("mousedown", function() {
-      joy2_ON();
-    });
-    boton2.addEventListener("mouseup", function() {
-      joy2_OFF();
-    });
-  document.addEventListener("keydown", (event) => {
-    if (event.repeat) return; // evita múltiples disparos si se mantiene la tecla
-    switch (event.key) {
-      case "a":
-      case "A":
-      case "ArrowLeft":
-        joy1_ON();
-        break;
-      case "d":
-      case "D":
-      case "ArrowRight":
-        joy2_ON();
-        break;
-    }
-  });
-  document.addEventListener("keyup", (event) => {
-    switch (event.key) {
-      case "a":
-      case "A":
-      case "ArrowLeft":
-        joy1_OFF();
-        break;
-      case "d":
-      case "D":
-      case "ArrowRight":
-        joy2_OFF();
-        break;
-    }
-  });
-};
 
+function ConfiguraJoystick() {
+    
+    // Función auxiliar para asignar eventos de Mouse y Touch
+    const asignarEventos = (idElem, funcionOn, funcionOff) => {
+        const boton = document.getElementById(idElem);
+        
+        // --- MOUSE (PC) ---
+        boton.addEventListener("mousedown", function(e) {
+            e.preventDefault(); // Evita selecciones raras
+            funcionOn();
+        });
+        boton.addEventListener("mouseup", function(e) {
+            e.preventDefault();
+            funcionOff();
+        });
+        // Si el mouse sale del botón mientras se presiona, debe detenerse
+        boton.addEventListener("mouseleave", function(e) {
+            funcionOff();
+        });
+
+        // --- TOUCH (MOVIL) ---
+        boton.addEventListener("touchstart", function(e) {
+            e.preventDefault(); // IMPORTANTE: Evita scroll, zoom y emulación de mouse
+            funcionOn();
+        }, { passive: false });
+
+        boton.addEventListener("touchend", function(e) {
+            e.preventDefault();
+            funcionOff();
+        }, { passive: false });
+    };
+
+    // Asignar a los botones
+    asignarEventos("Btn1", joy1_ON, joy1_OFF);
+    asignarEventos("Btn2", joy2_ON, joy2_OFF);
+
+    // --- TECLADO (PC) ---
+    document.addEventListener("keydown", (event) => {
+        if (event.repeat) return;
+        switch (event.key) {
+            case "a": case "A": case "ArrowLeft":
+                joy1_ON();
+                break;
+            case "d": case "D": case "ArrowRight":
+                joy2_ON();
+                break;
+        }
+    });
+
+    document.addEventListener("keyup", (event) => {
+        switch (event.key) {
+            case "a": case "A": case "ArrowLeft":
+                joy1_OFF();
+                break;
+            case "d": case "D": case "ArrowRight":
+                joy2_OFF();
+                break;
+        }
+    });
+};
