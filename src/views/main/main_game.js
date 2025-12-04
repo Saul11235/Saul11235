@@ -60,6 +60,9 @@ function iniciar_ventana_juego() {
     ConfiguraJoystick();
     //  animacion que aclara la pantalla
     aclarar_pantalla();
+     //  abre el motor grafico
+     motor_begin_gameloop();  // <-- ojo se llama a una funcion que configura
+ 
    }, 500);
   // --------------
 }
