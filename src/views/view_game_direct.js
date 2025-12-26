@@ -5,6 +5,7 @@ LJS_setMainFuncs("game",()=>{
       //  comienza juego desde DOM
       //
          console.log("game direct")
+    	 setTitle("Edwin Saul","Edwin Saul") 
          let pantalla_elem= document.getElementById('pantalla_color');
          pantalla_elem.classList.add("oscurece_pantalla");
          //--------------

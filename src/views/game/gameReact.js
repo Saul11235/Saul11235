@@ -14,7 +14,7 @@ var flag_bucle=false; // true si nos encontramos en bucle
 var points_now = 0;  // puntos de jugador
 var points_top = 0;  // maxima puntuacion
 var velocidad_nave = 50;  // velocidad horizontal de nave
-var velocidad_stars =50;  // velocidad vertical estrellas
+var velocidad_stars =40;  // velocidad vertical estrellas
 var tiempo_stars = 400;  // tiempo en la que sale una nueva estrella
 var boton1_presionado = false  // true si es izquierdo
 var boton2_presionado = false  // true si es derecho
@@ -524,6 +524,11 @@ function ciclo_del_motor(currentTime) {
 
 
 function motor_gameloop(currentTime) { 
+  // verifica que exista objeto nave
+  if (!motor_existe("nave")) {
+    logicaJuego_detener();
+    return; 
+  }
   // Calculamos delta real basado en el tiempo
   var delta = motor_deltaT(currentTime);
   // moviendo nave  ------  JOYSTICK
@@ -574,7 +579,7 @@ function logicaJuego_is_goal(nameId){ //evalua si un str es goal
   yfinal  = limites[3];
   ygoal   = 99
   if (yfinal > ygoal){
-    puntuacion_calificar(5); // aumenta 5 puntos
+    puntuacion_calificar(1); // aumenta 1 punto
     motor_eliminar(nameId);
     return true;
   } else {return false};
@@ -584,13 +589,25 @@ function logicaJuego_is_goal(nameId){ //evalua si un str es goal
 //
 function logicaJuego_velocidadEstrellas() {
   // velocidad que varia con la dificultad
-  return  velocidad_stars+points_now/5
+  return  velocidad_stars+points_now/2
 };
 
 // .------
 
 function logicaJuego_estrellas() {
     return motor_getElements().filter(item => item !== "nave");
+}
+
+// .------
+
+function logicaJuego_detener() {
+ flag_jugar=false;
+ flag_boton=false;
+ flag_bucle=false;
+ // pausa
+  setTimeout(() => {
+    motor_stop_gameloop();
+  }, 100);
 }
 
 // .------
@@ -637,14 +654,14 @@ function puntuacion_setCookie(val) {
   const fecha = new Date();
   fecha.setTime(fecha.getTime() + (dias * 24 * 60 * 60 * 1000));
   const expira = "expires=" + fecha.toUTCString();
-  document.cookie = "puntuacionES=" + encodeURIComponent(val) + ";" + expira + ";path=/";
+  document.cookie = "puntuacion_ES=" + encodeURIComponent(val) + ";" + expira + ";path=/";
   console.log("Cookie guardada:", val);
 }
 
 
 function puntuacion_getCookie() {
   // Lee la cookie "puntuacionES"
-  const nombre = "puntuacionES=";
+  const nombre = "puntuacion_ES=";
   const decodedCookie = decodeURIComponent(document.cookie);
   const partes = decodedCookie.split(";");
   for (let parte of partes) {
@@ -774,3 +791,4 @@ function ConfiguraJoystick() {
         }
     });
 };
+
